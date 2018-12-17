@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".lodge_list">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/header_lodge"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="숙박" />
+
+            <TextView
+                android:id="@+id/header_meal"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="식사" />
+
+            <TextView
+                android:id="@+id/header_place"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="장소" />
+
+            <TextView
+                android:id="@+id/header_culife"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="문화생활" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_marginBottom="56dp"
+            android:id="@+id/lodge"
+            android:divider="#F7F7F7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"></ListView>
+
+        <ListView
+            android:layout_marginBottom="56dp"
+            android:id="@+id/meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#F7F7F7"
+            android:layout_below="@+id/header"></ListView>
+
+        <ListView
+            android:layout_marginBottom="56dp"
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#F7F7F7"
+            android:layout_below="@+id/header"></ListView>
+
+        <ListView
+            android:layout_marginBottom="56dp"
+            android:id="@+id/cul_life"
+            android:layout_width="match_parent"
+            android:divider="#F7F7F7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"></ListView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

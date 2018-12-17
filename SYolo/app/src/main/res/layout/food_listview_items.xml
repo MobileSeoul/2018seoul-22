@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.dd.ShadowLayout
+            android:background="@drawable/list_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_cornerRadius="3dp"
+            app:sl_shadowRadius="5dp"
+            app:sl_shadowColor="#aaaaaaaa"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            >
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_main_listviewdata1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:text="title" />
+                <TextView
+                    android:id="@+id/textview_main_listviewdata2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:text="category" />
+                <TextView
+                    android:id="@+id/textview_main_listviewdata3"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:text="address" />
+            </LinearLayout>
+        </com.dd.ShadowLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

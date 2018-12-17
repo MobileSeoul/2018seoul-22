@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dip"
+    android:layout_height="400dip"
+    tools:context=".review_write">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:hint="별점을 입력하세요(1~5)"
+                android:digits="[1|2|3|4|5]"
+                android:maxLength="1"
+                android:inputType="number"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="13dp"
+                android:background="@drawable/text_border"
+                />
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:maxLength="100"
+                android:layout_weight="3"
+                android:textSize="14dp"
+                android:padding="15dp"
+                android:hint="내용을 입력하세요(100자 이내)"
+                android:background="@drawable/text_border"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:text="취소"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/ok"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:text="등록"
+                    android:textColor="@color/white"
+                    android:background="@drawable/text_border3"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

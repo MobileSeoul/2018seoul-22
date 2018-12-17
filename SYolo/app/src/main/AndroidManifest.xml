@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hyeminj.syolo">
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/hatch_noback"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/hatch_noback"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lodge_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".place_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".culture_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lodge_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".place_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".etc_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".festival_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gallery_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".musical_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".play_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".KakaoSignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".review_write"
+            android:label="리뷰 작성하기"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".detail"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDsHhseZBeJ4Waqm9qVN5abuAfj-XdX8iY" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_key" />
+
+        <activity android:name=".Board_Write" />
+        <activity
+            android:name=".board_detail"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".BoardFragment" />
+        <activity
+            android:name=".hospital_wait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".MyReview" />
+        <activity android:name=".FAQ"></activity>
+        <activity android:name=".seoul_chk"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            ></activity>
+    </application>
+
+</manifest>

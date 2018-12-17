@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".culture_list">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/festival_frame">
+
+            <ImageView
+                android:id="@+id/image_festival"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                app:srcCompat="@drawable/fireworks" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="FESTIVAL"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/border2"
+            android:id="@+id/play_frame">
+
+            <ImageView
+                android:id="@+id/image_play"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                app:srcCompat="@drawable/theater" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="PLAY"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/border2"
+            android:layout_marginTop="5dp"
+            android:id="@+id/musical_frame">
+
+            <ImageView
+                android:id="@+id/image_musical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                app:srcCompat="@drawable/sing" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="MUSICAL"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border2"
+            android:id="@+id/gallery_frame">
+
+            <ImageView
+                android:id="@+id/image_gallery"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                app:srcCompat="@drawable/gallery_icon" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="GALLERY"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border2"
+            android:id="@+id/etc_frame">
+
+            <ImageView
+                android:id="@+id/image_etc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                app:srcCompat="@drawable/piano" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="ETC."
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

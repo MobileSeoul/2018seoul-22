@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review_item">
+
+    <com.dd.ShadowLayout
+        android:background="@drawable/list_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sl_cornerRadius="3dp"
+        app:sl_shadowRadius="5dp"
+        app:sl_shadowColor="#aaaaaaaa"
+        app:sl_dx="0dp"
+        app:sl_dy="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorLightGray"
+                ></View>
+
+            <TextView
+                android:id="@+id/review_id"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="id"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingbar"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:progressTint="@color/colorDeepYellow"
+                    style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/review_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textSize="10dp"
+                    android:textColor="@color/date"
+                    />
+                <ImageView
+                    android:id="@+id/trash"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/trash"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/review_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.dd.ShadowLayout>
+
+</android.support.constraint.ConstraintLayout>

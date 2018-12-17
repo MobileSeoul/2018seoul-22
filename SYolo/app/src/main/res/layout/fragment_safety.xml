@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".food_detail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="middle">
+
+            <fragment
+                android:id="@+id/map_place"
+                class="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/place_title"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="병원 찾기" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/txt_question_type"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:layout_marginRight="10dp"
+                        />
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:id="@+id/refresh"
+                        android:layout_height="18dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/reload"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        />
+                    <Button
+                        android:id="@+id/call_button"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/button_border"
+                        android:text="긴급전화 ☎" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/header_hospital"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="병원 정보" />
+
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/review"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/header_2"
+                        android:layout_below="@+id/app_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/textView_header_1"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Title" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="0.9"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Category" />
+
+                        <TextView
+                            android:id="@+id/textView_header_3"
+
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Place" />
+
+                        <TextView
+                            android:id="@+id/textView_header_4"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Tel" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/listview_f_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="227dp"
+                        android:divider="@color/colorWhite"
+                        android:layout_below="@+id/header"></ListView>
+
+
+
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

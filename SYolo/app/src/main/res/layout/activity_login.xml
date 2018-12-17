@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="50dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="170dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            app:srcCompat="@mipmap/hatch_noback" />
+
+        <ImageButton
+            android:id="@+id/btn_kakao_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/kakao_login"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btn_naver_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/naver_login"
+            tools:ignore="MissingConstraints" />
+
+
+
+        <ImageButton
+            android:id="@+id/btn_facebook_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/facebook_log"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

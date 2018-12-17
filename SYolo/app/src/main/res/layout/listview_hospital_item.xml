@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".item">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.dd.ShadowLayout
+            android:background="@drawable/list_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_cornerRadius="3dp"
+            app:sl_shadowRadius="5dp"
+            app:sl_shadowColor="#aaaaaaaa"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            >
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_hospital_listviewdata1"
+                    android:layout_width="70dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Title" />
+
+                <TextView
+                    android:id="@+id/textview_hospital_listviewdata2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Category" />
+                <TextView
+                    android:id="@+id/textview_hospital_listviewdata3"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Time" />
+
+                <TextView
+                    android:id="@+id/textview_hospital_listviewdata4"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Place" />
+            </LinearLayout>
+        </com.dd.ShadowLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

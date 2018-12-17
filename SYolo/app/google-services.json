@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "699730212476",
+    "firebase_url": "https://syolo-d9833.firebaseio.com",
+    "project_id": "syolo-d9833",
+    "storage_bucket": "syolo-d9833.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699730212476:android:cbbd6b5ade736c90",
+        "android_client_info": {
+          "package_name": "com.example.hyeminj.syolo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699730212476-imo04fjrg98rfh3hepdpe6o8p41vm806.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hyeminj.syolo",
+            "certificate_hash": "0f29416103e6c9ae8c7e85a9502b4577a83699dd"
+          }
+        },
+        {
+          "client_id": "699730212476-a20l4a49b10ca3u6i1c8dhrm9qi62fbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvA8hn8nus1DA5jgesMdZziAi_UBEaby8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699730212476-a20l4a49b10ca3u6i1c8dhrm9qi62fbk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

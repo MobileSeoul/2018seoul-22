@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.dd.ShadowLayout
+            android:background="@drawable/list_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_cornerRadius="3dp"
+            app:sl_shadowRadius="5dp"
+            app:sl_shadowColor="#aaaaaaaa"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            >
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lodge_listviewdata1"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:id="@+id/lodge_listviewdata2"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+                <TextView
+                    android:id="@+id/lodge_listviewdata3"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"/>
+
+
+            </LinearLayout>
+        </com.dd.ShadowLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

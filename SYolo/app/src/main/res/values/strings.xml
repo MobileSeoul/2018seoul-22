@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">syolo</string>
+    <string name="title_activity_place_list">place_list</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">detail</string>
+    <string name="facebook_app_key">2213682818851912</string>
+    <string name="nav_Home">Home</string>
+    <string name="nav_Like">Like</string>
+    <string name="nav_Safety">Hospital</string>
+    <string name="nav_More">More</string>
+</resources>

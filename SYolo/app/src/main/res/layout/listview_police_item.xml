@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_police_listviewdata1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Title" />
+
+    <TextView
+        android:id="@+id/textview_police_listviewdata2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Category" />
+    <TextView
+        android:id="@+id/textview_police_listviewdata3"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/textview_police_listviewdata4"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Place" />
+
+    <TextView
+        android:id="@+id/textview_police_listviewdata5"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Place" />
+</LinearLayout>
